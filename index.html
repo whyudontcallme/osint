@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#000000" />
+  <title>OSINT‑аналитик · Психодельник</title>
+  <meta name="description"
+    content="Начинающий OSINT‑аналитик. Закрытые кейсы, разоблачения, обучение. Услуги, отзывы, чат." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ФОНОВЫЙ ОВЕРЛЕЙ -->
+  <div class="bg-layer"></div>
+
+  <!-- ШАПКА / НАВИГАЦИЯ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">PSYHODELICEK</div>
+    <ul class="nav-links" id="nav-links" role="navigation" aria-label="Главное меню">
+      <li><a href="#about" class="nav-link">О себе</a></li>
+      <li><a href="#stats" class="nav-link">Кейсы</a></li>
+      <li><a href="#services" class="nav-link">Услуги</a></li>
+      <li><a href="#contacts" class="nav-link">Контакты</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <div class="hero-content">
+      <span class="hero-badge">OSINT · АНАЛИТИКА · КОНТРКУЛЬТУРА</span>
+      <h1 class="hero-title" data-text="Психодельник">Психодельник</h1>
+      <p class="hero-sub">OSINT‑аналитик.</p>
+      <div class="hero-btns">
+        <a href="https://t.me/+dAZwJ8I16-AxY2Vi" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+          id="hero-btn-project">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M22 2L11 13" />
+            <path d="M22 2L15 22 11 13 2 9l20-7z" />
+          </svg>
+          Проект
+        </a>
+        <a href="https://t.me/pricepsyhodelicek" target="_blank" rel="noopener noreferrer" class="btn btn-outline"
+          id="hero-btn-services">Услуги</a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- О СЕБЕ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-tag">// 01</div>
+      <h2 class="section-title reveal">О&nbsp;себе</h2>
+      <div class="about-grid">
+        <div class="about-img-wrap reveal">
+          <div class="about-img-frame">
+            <img src="avatar.jpg" alt="Аватар аналитика Психодельника" class="avatar-img" id="avatar"
+              loading="lazy" width="280" height="280" />
+            <div class="img-glitch" aria-hidden="true"></div>
+          </div>
+          <div class="about-img-label">PSYHODELICEK</div>
+        </div>
+        <div class="about-text reveal">
+          <p class="about-lead">Начинающий OSINT‑аналитик. Свой путь начал в январе&nbsp;2024&nbsp;года.</p>
+          <p>Последователь контркультуры. Закрыл большое количество кейсов по&nbsp;терр‑играм, разоблачил скам
+            похоронного бюро.</p>
+          <p>Перевоспитал десять доксеров и&nbsp;обучил пятерых учеников.</p>
+          <a href="https://t.me/+dAZwJ8I16-AxY2Vi" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm"
+            id="about-tg-link">Телеграм‑проект →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- СТАТИСТИКА / КЕЙСЫ -->
+  <section class="section stats" id="stats">
+    <div class="container">
+      <div class="section-tag">// 02</div>
+      <h2 class="section-title reveal">Достижения</h2>
+      <div class="stats-grid">
+        <div class="stat-card reveal" id="stat-1">
+          <div class="stat-num" data-target="5">5</div>
+          <div class="stat-label">Учеников обучено</div>
+        </div>
+        <div class="stat-card reveal" id="stat-2">
+          <div class="stat-num" data-target="10">10</div>
+          <div class="stat-label">Перевоспитано доксеров</div>
+        </div>
+        <div class="stat-card reveal" id="stat-3">
+          <div class="stat-num" data-target="20">20</div>
+          <div class="stat-label">Закрытых кейсов</div>
+        </div>
+        <div class="stat-card reveal" id="stat-4">
+          <div class="stat-num big-text" data-text="2024">2024</div>
+          <div class="stat-label">Год начала пути</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- УСЛУГИ -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-tag">// 03</div>
+      <h2 class="section-title reveal">Услуги</h2>
+      <div class="services-grid">
+        <div class="service-card reveal" id="svc-1">
+          <div class="service-icon">01</div>
+          <h3>OSINT‑поиск</h3>
+          <p>Поиск информации по открытым источникам. Профиль человека, верификация данных.</p>
+        </div>
+        <div class="service-card reveal" id="svc-2">
+          <div class="service-icon">02</div>
+          <h3>Разоблачение скама</h3>
+          <p>Проверка подозрительных личностей, организаций и схем. Доказательная база.</p>
+        </div>
+        <div class="service-card reveal" id="svc-3">
+          <div class="service-icon">03</div>
+          <h3>Обучение</h3>
+          <p>Индивидуальное обучение OSINT‑методологии. Практические кейсы и разборы.</p>
+        </div>
+        <div class="service-card reveal" id="svc-4">
+          <div class="service-icon">04</div>
+          <h3>Защита от доксинга</h3>
+          <p>Аудит вашего цифрового следа. Рекомендации по анонимности и приватности.</p>
+        </div>
+      </div>
+      <div class="services-cta">
+        <a href="https://t.me/pricepsyhodelicek" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+          id="services-price-btn">
+          Полный прайс‑лист
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- КОНТАКТЫ -->
+  <section class="section contacts" id="contacts">
+    <div class="container">
+      <div class="section-tag">// 04</div>
+      <h2 class="section-title reveal">Контакты</h2>
+      <div class="contacts-grid">
+        <a href="https://t.me/+dAZwJ8I16-AxY2Vi" target="_blank" rel="noopener noreferrer" class="contact-card reveal" id="cnt-project">
+          <div class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-1.97 9.281c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.32 14.382l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.836.204z" />
+            </svg>
+          </div>
+          <div class="contact-info">
+            <div class="contact-name">Проект</div>
+            <div class="contact-handle">@psyhodelicek</div>
+          </div>
+          <div class="contact-arrow" aria-hidden="true">→</div>
+        </a>
+
+        <a href="https://t.me/reppsyhodelicek" target="_blank" rel="noopener noreferrer" class="contact-card reveal" id="cnt-reviews">
+          <div class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" />
+            </svg>
+          </div>
+          <div class="contact-info">
+            <div class="contact-name">Отзывы</div>
+            <div class="contact-handle">@reppsyhodelicek</div>
+          </div>
+          <div class="contact-arrow" aria-hidden="true">→</div>
+        </a>
+
+        <a href="https://t.me/nometadel" target="_blank" rel="noopener noreferrer" class="contact-card reveal" id="cnt-rules">
+          <div class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+            </svg>
+          </div>
+          <div class="contact-info">
+            <div class="contact-name">Соблюдайте</div>
+            <div class="contact-handle">@nometadel</div>
+          </div>
+          <div class="contact-arrow" aria-hidden="true">→</div>
+        </a>
+
+        <a href="https://t.me/+PR8HDatXXu9lMjQ6" target="_blank" rel="noopener noreferrer" class="contact-card reveal" id="cnt-chat">
+          <div class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+            </svg>
+          </div>
+          <div class="contact-info">
+            <div class="contact-name">Мой чат</div>
+            <div class="contact-handle">@chat_psyhodelicek</div>
+          </div>
+          <div class="contact-arrow" aria-hidden="true">→</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMO -->
+  <section class="section promo" id="promo">
+    <div class="container">
+      <div class="promo-card reveal">
+        <div class="promo-left">
+          <div class="promo-tag">// Хочешь такой же?</div>
+          <h2 class="promo-title">Сделаю сайт для тебя</h2>
+          <p class="promo-text">Такой же стильный одностраничник под твой проект или личный бренд. Быстро, красиво, без воды.</p>
+          <a href="https://t.me/lovemelt" target="_blank" rel="noopener noreferrer" class="btn btn-primary promo-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/>
+            </svg>
+            Написать в Telegram
+          </a>
+        </div>
+        <div class="promo-right">
+          <video src="video.mp4" class="promo-video" autoplay loop muted playsinline preload="none"></video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">PSYHODELICEK</div>
+      <p class="footer-copy">© OSINT‑аналитик · Все права защищены</p>
+      <a href="#top" class="footer-top" id="back-to-top">↑ Наверх</a>
+    </div>
+  </footer>
+
+  <script>
+    // ── Navbar scroll ──
+    const navbar = document.getElementById('navbar');
+    const onScroll = () => navbar.classList.toggle('scrolled', window.scrollY > 40);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // ── Burger menu ──
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('nav-links');
+
+    burger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      burger.classList.toggle('active', isOpen);
+      burger.setAttribute('aria-expanded', isOpen);
+      burger.setAttribute('aria-label', isOpen ? 'Закрыть меню' : 'Открыть меню');
+      // Prevent body scroll when menu is open
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    // Close menu on nav link click
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        burger.classList.remove('active');
+        burger.setAttribute('aria-expanded', 'false');
+        burger.setAttribute('aria-label', 'Открыть меню');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // Close menu on outside click
+    document.addEventListener('click', (e) => {
+      if (navLinks.classList.contains('open') && !navbar.contains(e.target)) {
+        navLinks.classList.remove('open');
+        burger.classList.remove('active');
+        burger.setAttribute('aria-expanded', 'false');
+        burger.setAttribute('aria-label', 'Открыть меню');
+        document.body.style.overflow = '';
+      }
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navLinks.classList.contains('open')) {
+        navLinks.classList.remove('open');
+        burger.classList.remove('active');
+        burger.setAttribute('aria-expanded', 'false');
+        burger.setAttribute('aria-label', 'Открыть меню');
+        document.body.style.overflow = '';
+      }
+    });
+
+    // ── Scroll reveal ──
+    const reveals = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          // Stagger children in same parent
+          const siblings = Array.from(entry.target.parentElement.querySelectorAll('.reveal'));
+          const idx = siblings.indexOf(entry.target);
+          entry.target.style.transitionDelay = `${idx * 0.07}s`;
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    reveals.forEach(el => revealObserver.observe(el));
+  </script>
+</body>
+
+</html>
